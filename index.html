@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
-
+     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 
 
    <!--/Navbar- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
@@ -41,18 +41,42 @@
 <section class="container fluid input_output">
 <div class="row">
     <div class="col-12 col-md-6">
-        <h2 class="text-center text-uppercase">input</h2>
+        <h2 class="text-center text-uppercase">Set your direction</h2>
     </div>
     <div class="col-12 col-md-6">
-        <h2 class="text-center text-uppercase">output</h2>
+        <h2 class="text-center text-uppercase">Get the summary</h2>
     </div>
 </div>
 
 </section>
 
+<section class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <h3 class="text-uppercase text-center">Plan your journey</h3>
+        </div>
+    </div>
+    <div id="map" class=></div>
+
+</section>
 
 
+    <script>
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 5,
+                gestureHandling: 'greedy',
+                center: {
+                    lat: 48.018050,
+                    lng: 12.343388
+                }
+            });
+        }
+    </script>
 
-
+</script>
+<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAdj_QosoKhQBg4-6Ym_AvOVfy9IXT-cU&callback=initMap"></script>
+      
 </body>
 </html>

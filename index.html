@@ -41,10 +41,10 @@
 <section class="container fluid input_output">
 <div class="row">
     <div class="col-12 col-md-6">
-        <h2 class="text-center text-uppercase">Set your direction</h2>
+        <button type="button" class="btn btn-primary btn-lg">Set your direction</button>
     </div>
     <div class="col-12 col-md-6">
-        <h2 class="text-center text-uppercase">Get the summary</h2>
+        <button type="button" class="btn btn-primary btn-lg">Get the summary</button>
     </div>
 </div>
 
@@ -63,6 +63,7 @@
 
     <script>
         function initMap() {
+//map displayed and centered, pan and drag options
             var map = new google.maps.Map(document.getElementById("map"), {
                 zoom: 5,
                 gestureHandling: 'greedy',
@@ -71,7 +72,23 @@
                     lng: 12.343388
                 }
             });
+// add location, add marker, set animation   
+            var marker = new google.maps.Marker({
+                animation: google.maps.Animation.DROP,
+                position:{lat:51.6949, lng:5.0428},
+                map:map,
+                icon:"https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png",
+            });
+
+            var infoWindow = new google.maps.InfoWindow ({
+                content: '<h3>Shell LNG station</h3>'
+            });
+
+            marker.addListener('click', function(){
+                infoWindow.open(map, marker);
+            });
         }
+
     </script>
 
 </script>

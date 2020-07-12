@@ -21,6 +21,7 @@
         <div class="row">
             <div class="col-12">
                 <h1 class="text-center text-uppercase types-heading">Refuelling with LNG is <br> Safe, Fast & Easy</h1>
+                
             </div>
         </div>    
         <div class="row">
@@ -39,7 +40,7 @@
         </div>
     </header>
 
-<section class="container fluid input_output">
+<section class="container fluid" id= "input_output">
 <div class="row">
     <div class="col-12 col-md-6">
         <button type="button" class="btn btn-primary btn-lg">Shell & TPN overview</button>
@@ -58,9 +59,28 @@
         </div>
     </div>
     <div id="map" class=></div>
-
+    
+<div class="ui-helper-clearfix" id="legend">
+    <ul>
+            <li>
+                <div class="icon shell"></div>
+                Shell Station
+            </li>
+            <li>
+                <div class="icon avia"></div>
+                Avia Station
+            </li>
+            <li>
+                <div class="icon airliquide"></div>
+                AirLiquide
+            </li>
+            <li>
+                <div class="icon rolande"></div>
+                Rolande
+            </li>
+        </ul>
+    </div>
 </section>
-
 
 <script>
     function initMap() 
@@ -184,6 +204,10 @@
 
 <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAdj_QosoKhQBg4-6Ym_AvOVfy9IXT-cU&callback=initMap"></script>
-      
+
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
 </body>
 </html>

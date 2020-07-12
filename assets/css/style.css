@@ -4,3 +4,10 @@
     height: 600px;  /* The height is 400 pixels */
     width: 100%;  /* The width is the width of the web page */
 };
+
+#legend > ul {
+    float: left;
+    list-style: none;
+    margin: 6px 0px 5px 4px;
+    padding: 0px;
+}

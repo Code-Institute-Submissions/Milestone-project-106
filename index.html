@@ -6,41 +6,43 @@
     <title>Truck refueling</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
+    
     <link rel="stylesheet" href="https://icons8.com/icon/55036/leaving-geo-fence">
 
-   <!--/Navbar- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" /> --/Navbar-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+ 
 
 </head>
 <body>
-    <header class="container-fluid">
-        <div class="row">
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">LNG Station Locator</h1>
+    <p class="lead">Refuelling with LNG is <strong>Safe, Fast & Easy</strong></p>
+  </div>
+</div>
+
+<div class="container">
+         <div class="row">
+        
             <div class="col-12">
-                <h1 class="text-center text-uppercase types-heading">Refuelling with LNG is <br> Safe, Fast & Easy</h1>
-                
-            </div>
-        </div>    
-        <div class="row">
-            <div class="col-12 col-md-4">
-                <h2>Calculate your journey in hours</h2>
+                <h2 class="text-center">Calculate your journey in hours</h2>
                     <p>####</p>
             </div>
-            <div class="col-12 col-md-4">
-                <h2>Calculate your journey in km</h2>
+            <div class="col-12">
+                <h2 class="text-center">Calculate your journey in km</h2>
                     <p>####</p>
             </div>
-            <div class="col-12 col-md-4">
-                <h2>See all refueling stations on the way</h2>
+            <div class="col-12">
+                <h2 class="text-center">See all refueling stations on the way</h2>
                     <p>####</p>
             </div>
         </div>
-    </header>
+</div>
 
-<section class="container fluid" id= "input_output">
+<div class="container fluid" id="input_output">
 <div class="row">
     <div class="col-12 col-md-6">
         <button type="button" class="btn btn-primary btn-lg">Shell & TPN overview</button>
@@ -50,164 +52,47 @@
     </div>
 </div>
 
-</section>
+</div>
 
-<section class="container-fluid">
+<div class="container-fluid">
     <div class="row">
         <div class="col-12">
             <h3 class="text-uppercase text-center">Plan your journey</h3>
         </div>
     </div>
     <div id="map" class=></div>
-    
-<div class="ui-helper-clearfix" id="legend">
-    <ul>
-            <li>
-                <div class="icon shell"></div>
+</div>
+
+
+<div>
+    <ul class="legend">
+        <li>
+            <div class="icon shell"></div>
                 Shell Station
-            </li>
-            <li>
-                <div class="icon avia"></div>
+        </li>
+        <li>
+             <div class="icon avia"></div>
                 Avia Station
-            </li>
-            <li>
-                <div class="icon airliquide"></div>
+        </li>
+        <li>
+            <div class="icon airliquide"></div>
                 AirLiquide
-            </li>
-            <li>
-                <div class="icon rolande"></div>
+        </li>
+        <li>
+            <div class="icon rolande"></div>
                 Rolande
-            </li>
-        </ul>
-    </div>
-</section>
-
-<script>
-    function initMap() 
-    {
-//map displayed and centered, pan and drag options
-            var map = new google.maps.Map(document.getElementById("map"), 
-            {
-                zoom: 5,
-                gestureHandling: 'greedy',
-                center: 
-                {
-                    lat: 48.018050,
-                    lng: 12.343388
-                }
-            });
-       
-// add location, add marker, set animation   
-/*
-            var marker = new google.maps.Marker(
-            {
-                animation: google.maps.Animation.DROP,
-                position:{lat:51.6949, lng:5.0428},
-                map:map,
-                icon: "https://img.icons8.com/bubbles/50/000000/gas-station.png",
-            });
-
-            var infoWindow = new google.maps.InfoWindow (
-            {
-                content: '<h3>Shell LNG station</h3>'
-            });
-
-            marker.addListener('click', function()
-            {
-                infoWindow.open(map, marker);
-            });
-*/
- 
-    addMarker({
-        coords:{lat:50.694284, lng:5.626468},
-        iconImage:"https://img.icons8.com/bubbles/50/000000/gas-station.png",
-        content:'<h5>Herstal Shell Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
-    });
-    addMarker({coords:{lat:51.26704, lng:4.39579},
-        iconImage:"https://img.icons8.com/bubbles/50/000000/gas-station.png",
-        content:'<h5>Antwerp Shell Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
-    });
-    addMarker({coords:{lat:50.7714, lng:3.19861},
-        iconImage:"https://img.icons8.com/bubbles/50/000000/gas-station.png",
-        content:'<h5>Rekkem Shell Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
-    });
-    addMarker({coords:{lat:50.942519, lng:5.703377},
-        iconImage:"https://img.icons8.com/bubbles/50/000000/gas-station.png",
-        content:'<h5>Maasmechelen Shell Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
-    }); 
-    addMarker({coords:{lat:52.403594, lng:4.837096},
-        iconImage:"https://img.icons8.com/bubbles/50/000000/gas-station.png",
-        content:'<h5>Amsterdam Shell Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
-    });
-    addMarker({coords:{lat:51.87894, lng:4.438004},
-        iconImage:"https://img.icons8.com/bubbles/50/000000/gas-station.png",
-        content:'<h5>Waddinxveen II Shell Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
-    });
-    addMarker({coords:{lat:52.016617, lng:4.62972},
-        iconImage:"https://img.icons8.com/bubbles/50/000000/gas-station.png",
-        content:'<h5>Waddinxveen III Shell Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
-    });
-    addMarker({coords:{lat:51.695072, lng:5.043066},
-        iconImage:"https://img.icons8.com/bubbles/50/000000/gas-station.png",
-        content:'<h5>Waalwijk Shell Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
-    });
-    addMarker({coords:{lat:51.46597, lng:5.418019},
-        iconImage:"https://img.icons8.com/bubbles/50/000000/gas-station.png",
-        content:'<h5>Eindhoven Shell Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
-    });
-    addMarker({coords:{lat:52.970304, lng:5.937688},
-        iconImage:"https://img.icons8.com/bubbles/50/000000/gas-station.png",
-        content:'<h5>Heerenveen Shell Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
-    });
-    addMarker({coords:{lat:51.992709, lng:4.394236},
-        iconImage:"https://img.icons8.com/bubbles/50/000000/gas-station.png",
-        content:'<h5>Pijnacker Shell Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
-    });
-    addMarker({coords:{lat:53.518898, lng:10.022123},
-        iconImage:"https://img.icons8.com/bubbles/50/000000/gas-station.png",
-        content:'<h5>Hamburg Shell Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
-    });
-    addMarker({coords:{lat:52.31239, lng:10.63523},
-        iconImage:"https://img.icons8.com/bubbles/50/000000/gas-station.png",
-        content:'<h5>Lehre Shell Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
-    });
-    addMarker({coords:{lat:51.593659, lng:7.220584},
-        iconImage:"https://img.icons8.com/bubbles/50/000000/gas-station.png",
-        content:'<h5>Recklinghausen Shell Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
-    });
-
-        function addMarker(props){
-            var marker = new google.maps.Marker(
-                {   animation: google.maps.Animation.DROP,
-                    position:props.coords,
-                    map:map,
-                });
-                if(props.iconImage){
-                    marker.setIcon(props.iconImage);
-                }
-
-                if(props.content) {
-                    var infoWindow = new google.maps.InfoWindow (
-                {
-                    content: props.content
-                });
-
-                marker.addListener('click', function()
-                {
-                infoWindow.open(map, marker);
-                });  
-            }
-        }
-    }
-
-</script>
+        </li>
+    </ul>
+</div>
 
 <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAdj_QosoKhQBg4-6Ym_AvOVfy9IXT-cU&callback=initMap"></script>
+   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+ <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
+<script src="assets/js/map.js"></script>
+<script src="assets/js/javascript.js"></script>
 </body>
 </html>

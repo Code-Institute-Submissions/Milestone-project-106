@@ -1,8 +1,15 @@
 $("button").mouseenter(function(){
-  $("button").removeClass("make-red").addClass("make-border");
+  $("button").removeClass("button1-change-color").addClass("make-border");
 });
 $("button").mouseleave(function(){
-  $("button").removeClass("make-border").addClass("make-red");
+  $("button").removeClass("make-border").addClass("button1-change-color");
+});
+
+$("button").mouseenter(function(){
+  $("button").removeClass("button2-change-color").addClass("make-border");
+});
+$("button").mouseleave(function(){
+  $("button").removeClass("make-border").addClass("button2-change-color");
 });
 
 
@@ -31,3 +38,7 @@ counters.forEach(counter => {
 
     updateCount();
 });
+
+function newFunction() {
+    return "change-color";
+}

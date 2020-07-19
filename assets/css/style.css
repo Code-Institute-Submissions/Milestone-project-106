@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap:400,500');
 
 
+body {
+    font-family: "Playfair Display", "san-serif";
+    background-color: #e1e2e2;
+}
 
 
 .jumbotron {
-    font-family: "Playfair Display", "san-serif";
     font-weight: bold;
     font-size: 5em;
     background-color: #CAD2C5;
@@ -24,6 +27,34 @@
 #map {
     height: 600px;  
     width: 100%;  
+}
+
+/* Buttons */
+
+button {
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    background-color: #84A98C;
+    text-align: center;
+    padding: 1em .75em;
+    text-decoration: none;
+    color: #fff;
+	font-size: 1.5em;
+}
+
+
+.button1-change-color {
+  background-color: #2F3E46;
+}
+
+.button2-change-color {
+  background-color: #2F3E46;
+}
+
+.make-border {
+  border: 2px solid #84A98C;
 }
 
 

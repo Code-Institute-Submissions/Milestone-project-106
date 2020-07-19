@@ -1,31 +1,36 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap:400,500');
 
+
+
+
+.jumbotron {
+    font-family: "Playfair Display", "san-serif";
+    font-weight: bold;
+    font-size: 5em;
+    background-color: #CAD2C5;
+}
+
+.lead {
+    color: gray;
+    font-size: 30px;
+}
+
+.icon {
+    color: #84A98C;
+}
+
+/* Google map parameters */
+
 #map {
-    height: 600px;  /* The height is 400 pixels */
+    height: 600px;  
     width: 100%;  
-};
+}
+
 
 .legend{
     float: left;
     list-style: none;
     margin: 6px 0px 5px 4px;
     padding: 0px;
-};
-    
-.jumbotron {
-    font-family: "Playfair Display", "san-serif";
-    font-weight: bold;
-    font-size: 5em;
-    background-color: red;
-};
-
-.lead {
-    color: red;
-}
-
-label {
     display: inline-block;
-    max-width:100%;
-    margin-bottom: 5px;
-    font-weight: 500;
 }

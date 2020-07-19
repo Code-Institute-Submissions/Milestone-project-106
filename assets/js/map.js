@@ -12,26 +12,7 @@ function initMap()
                 }
             });
        
-// add location, add marker, set animation   
-/*
-            var marker = new google.maps.Marker(
-            {
-                animation: google.maps.Animation.DROP,
-                position:{lat:51.6949, lng:5.0428},
-                map:map,
-                icon: "https://img.icons8.com/bubbles/50/000000/gas-station.png",
-            });
-
-            var infoWindow = new google.maps.InfoWindow (
-            {
-                content: '<h3>Shell LNG station</h3>'
-            });
-
-            marker.addListener('click', function()
-            {
-                infoWindow.open(map, marker);
-            });
-*/
+// add location, add marker, set info message    
  
     addMarker({
         coords:{lat:50.694284, lng:5.626468},
@@ -90,6 +71,8 @@ function initMap()
         iconImage:"https://img.icons8.com/bubbles/50/000000/gas-station.png",
         content:'<h5>Recklinghausen Shell Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
     });
+
+// add abnimation and event listener  
 
         function addMarker(props){
             var marker = new google.maps.Marker(

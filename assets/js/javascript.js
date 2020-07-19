@@ -1,3 +1,6 @@
+
+// add mouseenter/leave for the two buttons
+
 $("button").mouseenter(function(){
   $("button").removeClass("button1-change-color").addClass("make-border");
 });
@@ -13,9 +16,7 @@ $("button").mouseleave(function(){
 });
 
 
-$("#button-direction").click(function(){
-  $(".form").hide(2000).show(2000);
-});
+// add counter for the number of the stations, change target number when more stations go live
 
 var counters = document.querySelectorAll('.counter');
 var speed = 100000;
@@ -39,6 +40,4 @@ counters.forEach(counter => {
     updateCount();
 });
 
-function newFunction() {
-    return "change-color";
-}
+

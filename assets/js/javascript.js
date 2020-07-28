@@ -1,7 +1,7 @@
 
 // add mouseenter/leave for the two buttons
 
-$("button").mouseenter(function(){
+/*$("button").mouseenter(function(){
   $("button").removeClass("button1-change-color").addClass("make-border");
 });
 $("button").mouseleave(function(){
@@ -14,12 +14,12 @@ $("button").mouseenter(function(){
 $("button").mouseleave(function(){
   $("button").removeClass("make-border").addClass("button2-change-color");
 });
-
+*/
 
 // add counter for the number of the stations, change target number when more stations go live
 
 var counters = document.querySelectorAll('.counter');
-var speed = 100000;
+var speed = 10000;
 
 counters.forEach(counter => {
     var updateCount = () => {
@@ -41,3 +41,6 @@ counters.forEach(counter => {
 });
 
 
+// Distance calculator
+
+  

@@ -21,71 +21,41 @@
 
 <body>
 
-<!--Jumbotron-->
-    <div class="jumbotron jumbotron-fluid">
     <div class="container">
-        <h1>LNG Station Locator</h1>
-        <p class="lead">Refuelling with LNG is<strong> Safe, Fast and Easy</strong></p>
-    </div>
-<!--Count up-->
-        <div class="container">
+        <form>
+            <!-- Location 1 -->
             <div class="row">
-                <div class="col-6 text-center">
-                    <i class="fas fa-truck-moving icon"></i>
-                    <div class="counter" data-target="20">0</div>
-                    <h3>Shell LNG Stations</h3>
+                <div class="location-label">
+                    <label>Origin: </label>                                    
                 </div>
-                <div class="col-6 text-center">
-                    <i class="fas fa-truck-moving icon"></i>
-                    <div class="counter" data-target="50">0</div>
-                    <h3>Third Party Network Stations</h3>
+                <div class="location-input">
+                    <input type="text" id="location-1" name="origin" placeholder="Enter a start location..."> 
                 </div>
             </div>
-        </div>
-    </div>
-
-<!--Buttons with actions-->
-    <div class="container fluid">
-        <div class="row">
-            <div class="col-md-6">
-            <button type="button" class="button1-change-color" id="button1">Shell & TPN overview</button>
-            </div>
-            <div class="col-md-6">
-            <button type="button" class="button2-change-color" id="button2">Get directions</button>
-            </div>
-        </div>
-    </div>
-
-<!--Form for searching for direction-->
-    <div class="container" id="form-input">
-        <div class=row>
-            <div class="col-md-6">
-            <p class="form-text">Get directions to your destination and calculate your journey in kilometers and hours</p>
-                <form id="destination-form">
-                    <div id="form-calculate">
-                        <label>From:</label>
-                        <input class="form-input" id="from-places" placeholder="Enter a location">
-                        <input id="origin" name="origin" required="" type="hidden">
-                    </div>
-                    <div id="form-calculate">
-                        <label>To:</label>
-                        <input class="form-input" id="to-places" placeholder="Enter a location">
-                        <input id="destination" name="destination" required="" type="hidden">
-                    </div>
-
-                    <input type="submit" value="Calculate" class="btn btn-primary">
-                </form>   
-                <div id="form-result">
-                <ul>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">Total Distance</li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">Time</li>
-                </ul>
+            <!-- Location 2 -->
+            <div class="row">
+                <div class="location-label">
+                    <label>Destination: </label>
+                </div>
+                <div class="location-input">
+                    <input type="text" id="location-2" name="destination" placeholder="Enter a last location...">
                 </div>
             </div>
-        </div>
-    </div>
 
- 
+            <!-- Submit button -->
+            <div class="row">
+                <button class="button" type="button" onclick="clearRoute();">Clear</button>
+                <button class="button" type="button" onclick="calcRoute();">Submit</button>
+            </div>      
+            
+            <!-- Stats table -->                
+            <div id="output" class="result-table"></div>
+       </form>
+                
+            <div class="container-map" id="google-map"></div>   
+    </div>
+</div>
+
 
 <!--Google map-->
     <div class="container-fluid">
@@ -94,7 +64,7 @@
                 <h3 class="text-uppercase text-center">Plan your journey</h3>
             </div>
         </div>
-        <div id="map" class=></div>
+        <div id="map"></div>
     </div>
 
 <!--Google map legend-->
@@ -131,7 +101,7 @@
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAdj_QosoKhQBg4-6Ym_AvOVfy9IXT-cU&callback=initMap"></script>
 
     <!--Reference to Javascript files-->
-    <script src="assets/js/map.js"></script>
+    <script src="assets/js/directions.js"></script>
     <script src="assets/js/javascript.js"></script>
 
 </body>

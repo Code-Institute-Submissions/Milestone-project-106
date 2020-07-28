@@ -13,7 +13,7 @@ function initMap()
             });
        
 // add location, add marker, set info message    
- 
+
     addMarker({
         coords:{lat:50.694284, lng:5.626468},
         iconImage:"https://img.icons8.com/bubbles/50/000000/gas-station.png",
@@ -72,7 +72,7 @@ function initMap()
         content:'<h5>Recklinghausen Shell Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
     });
 
-// add abnimation and event listener  
+// add animation and event listener  
 
         function addMarker(props){
             var marker = new google.maps.Marker(
@@ -97,3 +97,4 @@ function initMap()
             }
         }
     }
+    

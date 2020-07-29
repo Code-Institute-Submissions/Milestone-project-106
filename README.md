@@ -23,12 +23,14 @@ The users can benefit form the discounts given by the Shell LNG card and can pla
 
 ##UX
 As a site owner:
+
 a.	I need to provide the latest information about the LNG stations location,
 b.	I need to have correct address and location of the stations on map,
 c.	I need to indicate which stations accept Shell LNG card,
 d.	I need to show to the user, which stations are Shell branded and which are branded by other LNG providers.
 
 As a site visitor 1:
+
 a.	I want to see an overview of all available LNG stations in Europe. 
 b.	I want to see how many LNG stations are there in Europe and where they are located.
 c.	I need to make sure that there is a refueling station on my way.
@@ -38,12 +40,14 @@ f.	I want to know how long does the journey take in km.
 g.	I want to know how long does the journey take in hours.
 
 As a site visitor 2:
+
 a.	I need to know how extensive the LNG network is in Europe and whether it covers my company’s operational countries.
 b.	I need to make sure that the drivers can use a customer card in different locations. 
 c.	I can check how long does a typical journey take in hours and km.
 d.	I need to know who are the other LNG providers in Europe.
 
 As a site visitor 3:
+
 a.	I want to know who provides LNG in Europe,
 b.	I want to know how many stations are there right now,
 c.	I want to know which countries have LNG stations.
@@ -54,9 +58,44 @@ c.	I want to know which countries have LNG stations.
 
 ##Features
 
+This website is very simple in structure. It has a Home page and a Directions page.
+
+###Home page Features:
+* In jumbotron, as a users  I can see right away how many LNG and Shell stations are there. 
+The countdown shows the number of the stations only if I load/reload the page. 
+* Button "Shell and TPN overview" refreshes the static view of the map on the click. 
+As a user I can click on this button to refresh the overview of the stations.
+* Button "Get directions" takes users to a separate page where the form can be filled. 
+As a user I can click on this button to plan my route.
+* Embedded Google map shows the static view of all stations.
+As a user I can see all the stations on the map.
+* As a user I can drag the map.
+* The map is centered.
+* Icons appear on the map with animation - bounce.
+* As a user I can click on each icon to open an info window.
+* The map has a legend. As a user I can differentiate between different providers.
+* The map has a legal disclaimer. As a user I know that the providers of the information are not responsible for any miscalculation. 
+* The contact form is placed in the end of the page. As a user I can contact site owners if I notice missing or inconsistent information.
+
+
+
 ##Features left to implement
+1. Show all the stations that are available along the route. When user gets directions, he/she can see where are the stations.
+2. Calculate detouring. As a user I can see if I need to detour to refuel, and how long is detour in km.
+3. Show "get directons" on the same page to make a one page website that is easier to navigate.
 
 ##Technologies used
+
+###Languages used:
+
+- HTML
+- CSS
+- Javascript
+- Bootstrap – https://getbootstrap.com/
+The project uses Bootstrap to simplify the process of building a grid layout, implementing forms, and creating buttons. 
+Bootstrap was also used for responsive design.
+- JQuery – https://jquery.com/
+JQuery was used for responsive design of the buttons.
 
 ##Testing
 

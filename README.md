@@ -86,16 +86,17 @@ As a user I can see all the stations on the map.
 
 ##Technologies used
 
-###Languages used:
-
-- HTML
-- CSS
-- Javascript
 - Bootstrap – https://getbootstrap.com/
 The project uses Bootstrap to simplify the process of building a grid layout, implementing forms, and creating buttons. 
 Bootstrap was also used for responsive design.
 - JQuery – https://jquery.com/
 JQuery was used for responsive design of the buttons.
+
+###Languages used:
+
+- HTML
+- CSS
+- Javascript
 
 ##Testing
 

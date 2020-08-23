@@ -26,7 +26,7 @@
             <!-- Location 1 -->
             <div class="row">
                 <div class="location-label">
-                    <label>Origin: </label>                                    
+                    <label>From: </label>                                    
                 </div>
                 <div class="location-input">
                     <input type="text" id="location-1" name="origin" placeholder="Enter a start location..."> 
@@ -35,17 +35,17 @@
             <!-- Location 2 -->
             <div class="row">
                 <div class="location-label">
-                    <label>Destination: </label>
+                    <label>To: </label>
                 </div>
                 <div class="location-input">
-                    <input type="text" id="location-2" name="destination" placeholder="Enter a last location...">
+                    <input type="text" id="location-2" name="destination" placeholder="Enter a final location...">
                 </div>
             </div>
 
             <!-- Submit button -->
             <div class="row">
+                <button class="button" type="button" onclick="calcRoute();">Get Direction</button>
                 <button class="button" type="button" onclick="clearRoute();">Clear</button>
-                <button class="button" type="button" onclick="calcRoute();">Submit</button>
             </div>      
             
             <!-- Stats table -->                
@@ -55,7 +55,6 @@
             <div class="container-map" id="google-map"></div>   
     </div>
 </div>
-
 
 <!--Google map-->
     <div class="container-fluid">

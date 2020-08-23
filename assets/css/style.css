@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap:400,500');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
 
 
 body {
-    font-family: "Playfair Display", "san-serif";
+    font-family: "Montserrat", "san-serif";
     background-color: #e1e2e2;
 }
 
@@ -11,10 +11,12 @@ body {
     font-weight: bold;
     font-size: 2em;
     background-color: #CAD2C5;
+    height: 8em;
+    padding:1em;
+    margin: 0 auto;
 }
 
 .lead {
-    color: gray;
     font-size: 30px;
 }
 
@@ -25,10 +27,14 @@ body {
 /* Google map parameters */
 
 #map {
-    height: 600px;  
+    height: 500px;  
     width: 100%;  
-}
+  }
 
+#container-map {
+    margin: 0, auto;
+    max-width: 1130px;
+}
 /* Buttons */
 
 button {
@@ -40,31 +46,33 @@ button {
     text-align: center;
     padding: 1em .75em;
     text-decoration: none;
-    color: #fff;
 	font-size: 1.5em;
 }
-
-
-.button1-change-color {
-  background-color: #2F3E46;
+#button-index {
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 100%;
+    background-color: #84A98C;
+    text-align: center;
+    padding: 1em .75em;
+    text-decoration: none;
+	font-size: 1.5em;
+    margin: 0 auto;
+    display: block;
 }
-
-.button2-change-color {
-  background-color: #2F3E46;
-}
-
-.make-border {
-  border: 2px solid #84A98C;
-}
-
-
 .legend{
     position: relative;
     list-style: none;
-    margin: 6px 0px 5px 4px;
+    margin: 0, auto;
     padding: 0;
+    max-width: 1130px;
 }
 
 .list-group-item {
-    padding: 1rem 1rem; 
+    padding: 0; 
+    margin: 0 auto;
+}
+
+list-group-horizontal{
+    margin: 0 auto;
 }

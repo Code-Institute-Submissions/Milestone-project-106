@@ -6,6 +6,12 @@ body {
     background-color: #e1e2e2;
 }
 
+#navigation {
+    margin: 0, auto;
+    padding: 0;
+    max-width: 1130px;
+    display: block;
+}
 
 .jumbotron {
     font-weight: bold;
@@ -14,6 +20,7 @@ body {
     height: 8em;
     padding:1em;
     margin: 0 auto;
+    max-width: 1130px;
 }
 
 .lead {

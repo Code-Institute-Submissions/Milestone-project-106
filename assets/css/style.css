@@ -37,16 +37,17 @@ body {
 }
 /* Buttons */
 
-button {
+.button {
     box-sizing: border-box;
     border-radius: 4px;
-    display: block;
     width: 100%;
     background-color: #84A98C;
     text-align: center;
     padding: 1em .75em;
     text-decoration: none;
 	font-size: 1.5em;
+    margin: 0 auto;
+    display: block;
 }
 #button-index {
     box-sizing: border-box;
@@ -73,6 +74,6 @@ button {
     margin: 0 auto;
 }
 
-list-group-horizontal{
+.list-group-horizontal{
     margin: 0 auto;
 }

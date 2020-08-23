@@ -21,8 +21,20 @@
 
 <body>
 
-    <div class="container">
-        <form>
+<!--Jumbotron-->
+    <div class="jumbotron jumbotron-fluid">
+    <div class="container fluid">
+        <div class="row">
+            <div class="col-lg-4 col-md-12">
+                <h1>LNG Station Locator</h1>
+                    <p class="lead">Refuelling with LNG is<strong> Safe, Fast and Easy</strong></p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="container fluid">
             <!-- Location 1 -->
             <div class="row">
                 <div class="location-label">
@@ -41,20 +53,21 @@
                     <input type="text" id="location-2" name="destination" placeholder="Enter a final location...">
                 </div>
             </div>
+    </div>
 
             <!-- Submit button -->
+        <div class="container fluid">
             <div class="row">
+                <div class="col-6">
                 <button class="button" type="button" onclick="calcRoute();">Get Direction</button>
+                </div>
+                <div class="col-6">
                 <button class="button" type="button" onclick="clearRoute();">Clear</button>
-            </div>      
-            
+                </div>
+            </div>  
             <!-- Stats table -->                
-            <div id="output" class="result-table"></div>
-       </form>
-                
-            <div class="container-map" id="google-map"></div>   
-    </div>
-</div>
+            <div id="output" class="result-table"></div> 
+        </div>
 
 <!--Google map-->
     <div class="container-fluid">

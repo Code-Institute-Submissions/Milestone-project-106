@@ -11,7 +11,42 @@ body {
     max-width: 100%;
     padding: 0;
     background-color: #76BA1B;
-    size: 50px;
+    height: 4em;
+}
+
+#logo-circle {  
+    width: 52px;
+    height: 52px;
+    border-radius: 31px;
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+.navbar-brand {
+    margin: 0;
+}
+
+.nav-link {
+    padding: 0px;
+}
+
+#icon-navbar {
+    color:#1e5631;
+    margin-right: 0px;
+    font-weight:300;
+}
+
+#truck {
+    padding: 0;
+}
+
+#navbar-items {
+    margin: 0;
+    color: #ffffff;
+}
+
+#navbarNavDropdown {
+    background-color: #76BA1B;
 }
 
 /*Jumbotron & icons */
@@ -21,7 +56,7 @@ body {
     background-color: #ACDF87;
     height: 5,5em;
     padding:1em;
-    margin: 0;
+    margin-bottom: 1rem;
     color: #ffffff; 
 
 }
@@ -33,6 +68,7 @@ body {
 
 .icon {
     color: #1e5631;
+    font-weight: 300;
 }
 
 /* Network overview container*/
@@ -41,6 +77,7 @@ body {
 #overview {
     background-color: #76BA1B;
     max-width: 1130px;
+    margin-bottom: 1rem;
 }
 .overview-heading {
     color: #ffffff;
@@ -100,11 +137,25 @@ body {
     max-width: 1130px;
 }
 
+.p-legend{
+    font-size: 15px;
+    text-align: left;
+}
+
 .list-group-item {
     padding: 0; 
     margin: 0 auto;
+    border: 3px solid #ffffff;
 }
 
 .list-group-horizontal{
     margin: 0 auto;
+}
+
+#contact-container ul li {
+    background-color: #ACDF87;
+}
+
+#contact-list {
+    display: block;
 }

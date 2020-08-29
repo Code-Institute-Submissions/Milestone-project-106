@@ -21,22 +21,25 @@
 
 <body>
 
-    <!--Navbar-->
-<div class="container fluid" id="navigation">
-    <nav class="navbar navbar-dark navbar-expand-sm">
-        <a href="index.html" class="navbar-brand">LNG Station Locator</a>
+    <!--Navbar---> 
+ 
+    <nav class="navbar navbar-dark navbar-expand-sm" id="navigation">
+        <div class="container-fluid navbar-brand  navbar-light bg-light" id="logo-circle">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-truck-moving" id="icon-navbar"></i> 
+            </a>
+         </div> 
 
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span></button>
 
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav mr-auto">
+                <li class="active nav-item mr-2"><a class="nav-link" href="index.html">LNG Station Locator</a></li>
                 <li class="active nav-item mr-2"><a class="nav-link" href="directions.html">Get Directions</a></li>
-                <li class="active nav-item mr-2"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
         </div>
-    </nav>
-</div>
+    </nav>  
 
 <!--Jumbotron-->
     <div class="jumbotron jumbotron-fluid">
@@ -86,30 +89,30 @@
     </div>
     
 
-<!--Google map-->
+<!--Google map-
     <div class="container-fluid" id="container-map">
         <div id="map"></div>
-    </div>
+    </div>->
+
 
 <!--Google map legend-->
     <div class="container-fluid legend">
         <ul class="list-group list-group-horizontal">
-            <li class="list-group-item flex-fill display-8">
-                <img src="https://img.icons8.com/bubbles/50/000000/gas-station.png"/>
+            <li class="list-group-item flex-fill">
+                <img src="https://img.icons8.com/bubbles/50/000000/gas-station.png" id="legend-icon"/>
                 Shell Station
             </li>
             <li class="list-group-item flex-fill">
             <img src="https://img.icons8.com/bubbles/50/000000/gas-station.png"/>
-                 
-                 Avia Station
+                Avia Station
             </li>
             <li class="list-group-item flex-fill">
             <img src="https://img.icons8.com/bubbles/50/000000/gas-station.png"/>
-                AirLiquide Station
+           AirLiquide Station
             </li>
             <li class="list-group-item flex-fill">
             <img src="https://img.icons8.com/bubbles/50/000000/gas-station.png"/>
-                Rolande Station
+              Rolande Station
             </li>
         </ul>
     </div>
@@ -120,6 +123,17 @@
           <a class="btn" href="directions.html" id="button1">Get Directions</a> 
            </button>
     </div>
+
+    <div class="container-fluid" id="contact-container">
+    <p>Contact Us</p>
+        <ul class="list-group" id="contact-list">
+            <li class="list-group-item">LNG Station Locator</li>
+            <li class="list-group-item">Smidswater 1A</li>
+            <li class="list-group-item">2514 BV The Hague </li>
+            <li class="list-group-item">The Netherlands</li>
+
+        </ul>
+    <div>
 
     <!--Bootstrap JS & jQuery reference-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

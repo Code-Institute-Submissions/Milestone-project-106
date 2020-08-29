@@ -11,8 +11,10 @@ body {
     max-width: 100%;
     padding: 0;
     background-color: #76BA1B;
-    justify-content: center;
+    size: 50px;
 }
+
+/*Jumbotron & icons */
 .jumbotron {
     font-weight: bold;
     font-size: 2em;
@@ -33,10 +35,31 @@ body {
     color: #1e5631;
 }
 
-#wrapper-overview {
+/* Network overview container*/
+
+
+#overview {
     background-color: #76BA1B;
+    max-width: 1130px;
+}
+.overview-heading {
+    color: #ffffff;
+    margin: 0;
 }
 
+#overview-heading {
+    margin: 5px;
+}
+
+#overview-paragraph {
+    margin: 5px;
+    position: relative;
+    color:#ffffff;
+}
+
+.overview-paragraph {
+    margin: 0;
+}
 
 /* Google map parameters */
 
@@ -46,12 +69,12 @@ body {
   }
 
 #container-map {
-    margin: 0, auto;
     max-width: 1130px;
+    padding:0;
 }
 /* Buttons */
 
-.wrapper {
+#wrapper-button {
     text-align: center;
     padding: 20px;
 }
@@ -68,25 +91,6 @@ body {
     color:#ffffff;
     font-size: 25px
 }
-/*
-#button-container{
-    margin-left: 0;
-    margin-right: 0;
-}
-
-#button-index{
-    box-sizing: border-box;
-    border-radius: 4px;
-    background-color:#76BA1B;
-    color: #ffffff;
-    text-align: center;
-    padding: 1em .75em;
-    text-decoration: none;
-	font-size: 1.5em;
-    margin: 0 auto;
-    display: block;
-}
-*/
 
 .legend{
     position: relative;

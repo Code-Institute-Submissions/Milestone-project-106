@@ -3,33 +3,40 @@
 
 body {
     font-family: "Montserrat", "san-serif";
-    background-color: #e1e2e2;
+    background-color: #ffffff;
 }
 
-#navigation {
-    margin: 0, auto;
+/* Nav Bar */
+#navigation{
+    max-width: 100%;
     padding: 0;
-    max-width: 1130px;
-    display: block;
+    background-color: #76BA1B;
+    justify-content: center;
 }
-
 .jumbotron {
     font-weight: bold;
     font-size: 2em;
-    background-color: #CAD2C5;
-    height: 8em;
+    background-color: #ACDF87;
+    height: 5,5em;
     padding:1em;
-    margin: 0 auto;
-    max-width: 1130px;
+    margin: 0;
+    color: #ffffff; 
+
 }
 
 .lead {
     font-size: 30px;
+    margin:0;
 }
 
 .icon {
-    color: #84A98C;
+    color: #1e5631;
 }
+
+#wrapper-overview {
+    background-color: #76BA1B;
+}
+
 
 /* Google map parameters */
 
@@ -44,11 +51,34 @@ body {
 }
 /* Buttons */
 
-.button {
+.wrapper {
+    text-align: center;
+    padding: 20px;
+}
+
+.button1{
+    background-color:  #76BA1B;
+    padding: 15px; 
+    border: 3px solid #ffffff;
+    transition: .6s;
+    min-width: 100px;
+    border-radius: 10px;
+}
+#button1 {
+    color:#ffffff;
+    font-size: 25px
+}
+/*
+#button-container{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#button-index{
     box-sizing: border-box;
     border-radius: 4px;
-    width: 100%;
-    background-color: #84A98C;
+    background-color:#76BA1B;
+    color: #ffffff;
     text-align: center;
     padding: 1em .75em;
     text-decoration: none;
@@ -56,18 +86,8 @@ body {
     margin: 0 auto;
     display: block;
 }
-#button-index {
-    box-sizing: border-box;
-    border-radius: 4px;
-    width: 100%;
-    background-color: #84A98C;
-    text-align: center;
-    padding: 1em .75em;
-    text-decoration: none;
-	font-size: 1.5em;
-    margin: 0 auto;
-    display: block;
-}
+*/
+
 .legend{
     position: relative;
     list-style: none;

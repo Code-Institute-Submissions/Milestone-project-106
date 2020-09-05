@@ -129,6 +129,8 @@ body {
     font-size: 25px
 }
 
+/* Map Legend*/
+
 .legend{
     position: relative;
     list-style: none;
@@ -152,10 +154,17 @@ body {
     margin: 0 auto;
 }
 
-#contact-container ul li {
-    background-color: #ACDF87;
-}
+/* Contact and SM links*/
 
 #contact-list {
     display: block;
+    margin-bottom: .5rem;
+}
+
+.sm-links {
+    padding: 0;
+}
+
+.sm-links li a i{
+    color: #76BA1B;
 }

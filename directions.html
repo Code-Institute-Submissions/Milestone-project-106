@@ -20,7 +20,6 @@
 </head>
 
 <body>
-
     <nav class="navbar navbar-dark navbar-expand-sm" id="navigation">
         <div class="container-fluid navbar-brand  navbar-light bg-light" id="logo-circle">
             <a class="navbar-brand" href="index.html">
@@ -70,74 +69,35 @@
     </div>
 
 
-    <div class="container fluid">
-            <!-- Location 1 -->
-            <div class="row">
-                <div class="location-label">
-                    <label>From: </label>                                    
-                </div>
-                <div class="location-input">
-                    <input type="text" id="location-1" name="origin" placeholder="Enter a start location..."> 
-                </div>
-            </div>
-            <!-- Location 2 -->
-            <div class="row">
-                <div class="location-label">
-                    <label>To: </label>
-                </div>
-                <div class="location-input">
-                    <input type="text" id="location-2" name="destination" placeholder="Enter a final location...">
-                </div>
-            </div>
-
-            <!-- Submit button -->
-        <div class="container fluid">
-            <div class="row">
-                <div class="col-6">
-                <button class="button" type="button" onclick="calcRoute();">Get Direction</button>
-                </div>
-                <div class="col-6">
-                <button class="button" type="button" onclick="clearRoute();">Clear</button>
-                </div>
-            </div>  
-            <!-- Stats table -->                
-            <div id="output" class="result-table"></div> 
+<table border="0" cellpadding="0" cellspacing="3">
+<tr>
+    <td colspan="2">
+        Source:
+        <input type="text" id="txtSource" value="Smidswater, The Hague, Netherlands" style="width: 200px" />
+        &nbsp; Destination:
+        <input type="text" id="txtDestination" value="Herengraght, Amsterdam, Netherlands" style="width: 200px" />
+        <br />
+        <input type="button" value="Get Route" onclick="GetRoute()" />
+        <hr />
+    </td>
+</tr>
+<tr>
+    <td colspan="2">
+        <div id="dvDistance">
         </div>
-        
-    </div>
-
-<!--Google map-->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12">
-                <h3 class="text-uppercase text-center">Plan your journey</h3>
-            </div>
+    </td>
+</tr>
+<tr>
+    <td>
+        <div id="dvMap" style="width: 500px; height: 500px">
         </div>
-        <div id="map"></div>
-    </div>
-
-<!--Google map legend-->
-    <div class="container-fluid legend">
-        <ul class="list-group list-group-horizontal">
-            <li class="list-group-item flex-fill display-8">
-                <img src="https://img.icons8.com/bubbles/50/000000/gas-station.png"/>
-                Shell Station
-            </li>
-            <li class="list-group-item flex-fill">
-            <img src="https://img.icons8.com/bubbles/50/000000/gas-station.png"/>
-                Avia Station
-            </li>
-            <li class="list-group-item flex-fill">
-            <img src="https://img.icons8.com/bubbles/50/000000/gas-station.png"/>
-                AirLiquide Station
-            </li>
-            <li class="list-group-item flex-fill">
-            <img src="https://img.icons8.com/bubbles/50/000000/gas-station.png"/>
-                Rolande Station
-            </li>
-        </ul>
-    </div>
-
+    </td>
+    <td>
+        <div id="dvPanel" style="width: 500px; height: 500px">
+        </div>
+    </td>
+</tr>
+</table>
         <div class="container-fluid" id="contact-container">
     <h5 class="text-center">Contact Us</h5>
         <ul class="list-group text-center" id="contact-list">
@@ -178,13 +138,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> 
 
     <!--Google map reference links-->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCu1B9Av4iCgz7gPMjmM8-UnSikNlX5f1M&libraries=places"></script>
 
-    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAdj_QosoKhQBg4-6Ym_AvOVfy9IXT-cU&callback=initMap"></script>
 
-    <!--Reference to Javascript files-->
+    <!--Reference to Javascript files
+    <script src="assets/js/map.js"></script>-->
     <script src="assets/js/directions.js"></script>
-    <script src="assets/js/map.js"></script>
     <script src="assets/js/javascript.js"></script>
 
 </body>

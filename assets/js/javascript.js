@@ -1,6 +1,6 @@
 
 var counters = document.querySelectorAll('.counter');
-var speed = 10000;
+var speed = 100000000;
 
 counters.forEach(counter => {
     var updateCount = () => {

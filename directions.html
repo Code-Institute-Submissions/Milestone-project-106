@@ -68,8 +68,8 @@
     </div>
     </div>
 
-
-<table border="0" cellpadding="0" cellspacing="3">
+<!---
+<table cellpadding="0" cellspacing="3">
 <tr>
     <td colspan="2">
         Source:
@@ -80,7 +80,28 @@
         <input type="button" value="Get Route" onclick="GetRoute()" />
         <hr />
     </td>
-</tr>
+</tr>-->
+
+
+<form>
+  <div class="form-group row">
+    <label for="txtSource" class="col-sm-2 col-form-label">From:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="txtSource" value="Smidswater, The Hague, Netherlands">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="" class="col-sm-2 col-form-label">To:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="txtDestination" value="Herengraght, Amsterdam, Netherlands">
+    </div>
+  </div>
+  <div class="form-group row">
+    <div class="col-sm-10">
+      <button type="button" class="btn btn-success" value="Get Route" onclick="GetRoute()">Get Route</button>
+    </div>
+  </div>
+</form>
 <tr>
     <td colspan="2">
         <div id="dvDistance">
@@ -98,7 +119,9 @@
     </td>
 </tr>
 </table>
-        <div class="container-fluid" id="contact-container">
+
+
+    <div class="container-fluid" id="contact-container">
     <h5 class="text-center">Contact Us</h5>
         <ul class="list-group text-center" id="contact-list">
             <li class="list-group-item">LNG Station Locator</li>
@@ -141,8 +164,8 @@
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCu1B9Av4iCgz7gPMjmM8-UnSikNlX5f1M&libraries=places"></script>
 
 
-    <!--Reference to Javascript files
-    <script src="assets/js/map.js"></script>-->
+    <!--Reference to Javascript files -->
+    <script src="assets/js/map.js"></script>
     <script src="assets/js/directions.js"></script>
     <script src="assets/js/javascript.js"></script>
 

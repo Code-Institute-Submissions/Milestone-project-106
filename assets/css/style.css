@@ -116,19 +116,6 @@ body {
     padding: 20px;
 }
 
-#button1{
-    background-color:  #76BA1B;
-    padding: 15px; 
-    border: 3px solid #ffffff;
-    transition: .6s;
-    min-width: 100px;
-    border-radius: 10px;
-}
-#button1 {
-    color:#ffffff;
-    font-size: 25px
-}
-
 /* Map Legend*/
 
 .legend{

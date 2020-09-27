@@ -117,41 +117,12 @@
         </ul>
     </div>
 
-<table border="0" cellpadding="0" cellspacing="3">
-<tr>
-    <td colspan="2">
-        Source:
-        <input type="text" id="txtSource" value="Smidswater, The Hague, Netherlands" style="width: 200px" />
-        &nbsp; Destination:
-        <input type="text" id="txtDestination" value="Herengraght, Amsterdam, Netherlands" style="width: 200px" />
-        <br />
-        <input type="button" value="Get Route" onclick="GetRoute()" />
-        <hr />
-    </td>
-</tr>
-<tr>
-    <td colspan="2">
-        <div id="dvDistance">
-        </div>
-    </td>
-</tr>
-<tr>
-    <td>
-        <div id="dvMap" style="width: 500px; height: 500px">
-        </div>
-    </td>
-    <td>
-        <div id="dvPanel" style="width: 500px; height: 500px">
-        </div>
-    </td>
-</tr>
-</table>
-
 <!--Buttons with actions-->
     <div class="wrapper" id="wrapper-button">
-           <button class="button">
-          <a class="btn" href="directions.html" id="button1">Get Directions</a> 
-           </button>
+    <a href="directions.html" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Get Directions</a>
+          <!-- <button type="button" class="button btn-sucess">
+          <a href="directions.html" id="button1">Get Directions</a> 
+           </button>-->
     </div>
 
     <div class="container-fluid" id="contact-container">
@@ -195,7 +166,7 @@
     <!--Google map reference links-->
 
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAdj_QosoKhQBg4-6Ym_AvOVfy9IXT-cU&libraries=places"></script>
+   <!--- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAdj_QosoKhQBg4-6Ym_AvOVfy9IXT-cU&libraries=places"></script>-->
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAdj_QosoKhQBg4-6Ym_AvOVfy9IXT-cU&callback=initMap"></script>
 
     <!--Reference to Javascript files-->

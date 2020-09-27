@@ -67,33 +67,18 @@
         </div>
     </div>
     </div>
-
-<!---
-<table cellpadding="0" cellspacing="3">
-<tr>
-    <td colspan="2">
-        Source:
-        <input type="text" id="txtSource" value="Smidswater, The Hague, Netherlands" style="width: 200px" />
-        &nbsp; Destination:
-        <input type="text" id="txtDestination" value="Herengraght, Amsterdam, Netherlands" style="width: 200px" />
-        <br />
-        <input type="button" value="Get Route" onclick="GetRoute()" />
-        <hr />
-    </td>
-</tr>-->
-
-
+<div class="container-fluid">
 <form>
   <div class="form-group row">
     <label for="txtSource" class="col-sm-2 col-form-label">From:</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" id="txtSource" value="Smidswater, The Hague, Netherlands">
+      <input type="text" class="form-control" id="txtSource" placeholder="I am travelling from" value="Smidswater, The Hague, Netherlands">
     </div>
   </div>
   <div class="form-group row">
     <label for="" class="col-sm-2 col-form-label">To:</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" id="txtDestination" value="Herengraght, Amsterdam, Netherlands">
+      <input type="text" class="form-control" id="txtDestination" placeholder="I am travelling to" value="Herengraght, Amsterdam, Netherlands">
     </div>
   </div>
   <div class="form-group row">
@@ -102,6 +87,8 @@
     </div>
   </div>
 </form>
+</div>
+<div class="container-fluid">
 <tr>
     <td colspan="2">
         <div id="dvDistance">
@@ -119,40 +106,7 @@
     </td>
 </tr>
 </table>
-
-
-    <div class="container-fluid" id="contact-container">
-    <h5 class="text-center">Contact Us</h5>
-        <ul class="list-group text-center" id="contact-list">
-            <li class="list-group-item">LNG Station Locator</li>
-            <li class="list-group-item">Smidswater 1A</li>
-            <li class="list-group-item">2514 BV The Hague </li>
-            <li class="list-group-item">The Netherlands</li>
-
-        </ul>
-    <div>
-
-    <footer class="container-fluid footer">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h5 class="sm-text">Find us on Social Media</h5>
-                <ul class="list inline sm-links">
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fab fa-linkedin-in" aria-hidden="true" style="font-size: 2em"></i>
-                            <span class="sr-only">Linkedin</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fab fa-twitter-square" aria-hidden="true" style="font-size: 2em"></i>
-                            <span class="sr-only">Twitter</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+</div>
 
 
     <!--Bootstrap JS & jQuery reference-->

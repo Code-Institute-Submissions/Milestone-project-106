@@ -16,7 +16,7 @@ function initMap()
 
     addMarker({
         coords:{lat:50.694284, lng:5.626468},
-        iconImage:"https://img.icons8.com/bubbles/50/000000/gas-station.png",
+        iconImage:"/assets/images/avia.png",
         content:'<h5>Herstal Shell Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
     });
     addMarker({coords:{lat:51.26704, lng:4.39579},

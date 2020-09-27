@@ -55,6 +55,10 @@ c.	I want to know which countries have LNG stations.
 ##User stories
 
 ##Wireframes
+Wireframes for laptop/desktop, tablet, and mobile are available here https://balsamiq.cloud/s7wry95/pc6qc9u
+Wireframes show all the actions that are used in design of the website: 
+a. Navbar value;
+b. Get Route button and change in the view of the page with the click.
 
 ##Features
 

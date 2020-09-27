@@ -67,45 +67,52 @@
     </div>
     </div>
 <div class="container-fluid">
-<form>
-  <div class="form-group row">
-    <label for="txtSource" class="col-sm-2 col-form-label">From:</label>
-    <div class="col-sm-10">
-      <input type="text" class="form-control" id="txtSource" placeholder="I am travelling from" value="Smidswater, The Hague, Netherlands">
-    </div>
-  </div>
-  <div class="form-group row">
-    <label for="" class="col-sm-2 col-form-label">To:</label>
-    <div class="col-sm-10">
-      <input type="text" class="form-control" id="txtDestination" placeholder="I am travelling to" value="Herengraght, Amsterdam, Netherlands">
-    </div>
-  </div>
-  <div class="form-group row">
-    <div class="col-sm-10">
-      <button type="button" class="btn btn-success" value="Get Route" onclick="GetRoute()">Get Route</button>
-    </div>
-  </div>
-</form>
+    <form>
+        <div class="form-group row">
+        <label for="txtSource" class="col-sm-2 col-form-label">From:</label>
+                <div class="col-lg-4 col-md-6 col-sm-10">
+                    <input type="text" class="form-control" id="txtSource" placeholder="I am travelling from" onfocus="this.value=''" value="Smidswater, The Hague, Netherlands">
+                </div>
+        </div>
+
+        <div class="form-group row">
+        <label for="txtWaypoint" class="col-sm-2 col-form-label">Stopver:</label>
+            <div class="col-lg-4 col-md-6 col-sm-10">
+                <select id="txtWaypoint" class="form-control">
+                    <option value="Blitzkuhlenstraße 97, 45659 Recklinghausen, Germany" selected>Shell</option>
+                    <option value="Romeynsweel 1, 2030 Antwerpen, Belgium">Shell</option>
+                </select>
+            </div>
+        </div>    
+
+        <div class="form-group row">
+        <label for="" class="col-sm-2 col-form-label">To:</label>
+            <div class="col-lg-4 col-md-6 col-sm-10">
+                <input type="text" class="form-control" id="txtDestination" placeholder="I am travelling to" onfocus="this.value=''" value="Herengraht, Amsterdam, Netherlands">
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-lg-4 col-md-6 col-sm-10">
+                <button type="button" class="btn btn-success" value="Get Route" onclick="GetRoute()">Get Route</button>
+             </div>
+        </div>
+    </form>
 </div>
+
 <div class="container-fluid">
-<tr>
-    <td colspan="2">
-        <div id="dvDistance">
-        </div>
-    </td>
-</tr>
-<tr>
-    <td>
-        <div id="dvMap" style="width: 500px; height: 500px">
-        </div>
-    </td>
-    <td>
-        <div id="dvPanel" style="width: 500px; height: 500px">
-        </div>
-    </td>
-</tr>
-</table>
+    <tr>
+        <td colspan="2">
+            <div id="dvDistance">
+            </div>
+        </td>
+    </tr>
 </div>
+
+<div class="container-fluid">
+    <div id="dvMap"></div>
+    <div id="dvPanel"></div>
+</div>
+
 
 
     <!--Bootstrap JS & jQuery reference-->

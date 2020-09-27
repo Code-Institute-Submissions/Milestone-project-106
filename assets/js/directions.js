@@ -13,6 +13,7 @@ function GetRoute() {
         zoom: 5,
         center: europe
     };
+
     map = new google.maps.Map(document.getElementById('dvMap'), mapOptions);
     directionsDisplay.setMap(map);
     directionsDisplay.setPanel(document.getElementById('dvPanel'));
@@ -56,26 +57,5 @@ function GetRoute() {
     });
 }
 
-//var locations = [
-//    ['Herstal', 50.694284, 5.626468]
-//    ['Antwerp', 51.26704, 4.39579]
-//]
-//    var infowindow = new google.maps.InfoWindow();
-
- //   var marker, i;
-
- //   for (i = 0; i < locations.length; i++) {  
- //     marker = new google.maps.Marker({
- //       position: new google.maps.LatLng(locations[i][1], locations[i][2]),
- //       map: map
- //     });
-
- //     google.maps.event.addListener(marker, 'click', (function(marker, i) {
- //       return function() {
-  //        infowindow.setContent(locations[i][0]);
-  //        infowindow.open(map, marker);
-  //      }
-  //    })(marker, i));
- //   }
 
    

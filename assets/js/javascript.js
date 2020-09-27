@@ -1,6 +1,6 @@
 
 var counters = document.querySelectorAll('.counter');
-var speed = 100000000;
+var speed = 10;
 
 counters.forEach(counter => {
     var updateCount = () => {
@@ -12,7 +12,7 @@ counters.forEach(counter => {
 
         if (count < target) {
             counter.innerText = Math.ceil(count + inc);
-            setTimeout(updateCount, 1);
+            setTimeout(updateCount, 100);
         }else {
             count.innerText = target;
         }
@@ -21,7 +21,5 @@ counters.forEach(counter => {
     updateCount();
 });
 
-
-// Distance calculator
 
   

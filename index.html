@@ -1,180 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Truck refueling</title>
 
-    <title>Truck refueling</title>
+        <!--Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
 
-    <!--Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <!--Fontawesome & Icons8-->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
-    <!--Fontawesome & Icons8-->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+        <!--Reference to css file-->
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    </head>
 
-    <!--Reference to css file-->  
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
+    <body>
+        <!--Navbar-->
 
-</head>
-
-<body>
-
-    <!--Navbar---> 
- 
-    <nav class="navbar navbar-dark navbar-expand-sm" id="navigation">
-        <div class="container-fluid navbar-brand  navbar-light bg-light" id="logo-circle">
-            <a class="navbar-brand" href="index.html">
-                <i class="fas fa-truck-moving" id="icon-navbar"></i> 
-            </a>
-         </div> 
-
-        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span></button>
-
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav mr-auto">
-                <li class="active nav-item mr-2"><a class="nav-link" href="index.html">LNG Station Locator</a></li>
-                <li class="active nav-item mr-2"><a class="nav-link" href="directions.html">Get Directions</a></li>
-            </ul>
-        </div>
-    </nav>  
-
-<!--Jumbotron-->
-    <div class="jumbotron jumbotron-fluid">
-    <div class="container fluid">
-        <div class="row">
-            <div class="col-lg-4 col-md-12">
-                <p class="lead text-center">Refuelling with LNG is<strong> Safe, Fast and Easy</strong></p>
+        <nav class="navbar navbar-dark navbar-expand-sm" id="navigation">
+            <div class="container-fluid navbar-brand navbar-light bg-light" id="logo-circle">
+                <a class="navbar-brand" href="index.html">
+                    <i class="fas fa-truck-moving" id="icon-navbar"></i>
+                </a>
             </div>
-<!--Count up-->
-            <div class="col-lg-4 col-md-6 text-center">
-                 <div class="d-none d-lg-block">
-                    <i class="fas fa-truck-moving icon"></i>
-                </div>
-                <div class="d-none d-md-block d-lg-block">
-                    <div class="counter" data-target="20">0</div>
-                    <h3>Shell LNG Stations</h3>
-                </div>
-            </div>
-                <div class="col-lg-4 col-md-6 text-center">
-                 <div class="d-none d-lg-block">
-                    <i class="fas fa-truck-moving icon"></i>
-                </div>
-                <div class="d-none d-md-block d-lg-block">
-                    <div class="counter" data-target="60">0</div>
-                    <h3>Third Party Network</h3>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
 
-    <div class="container fluid" id="overview">
-        <div class=row>
-            <div class="col-lg-4 col-md-4 col-sm-12" id="overview-heading">
-                <div class="wrapper" id="network-wrapper">
-                    <h4 class="overview-heading text-center">Network Overview</h4>
-                </div>
-            </div>
-            <div class="col-lg-7 col-md-7 col-sm-12" id="overview-paragraph">
-                <p class="overview-paragraph">
-                    This map gives an overview of all the refueling locations available in Europe. If you are a holder of the Shell LNG card, you can refuel in all the locations with an additional discount. 
-                    For more information on the stations' location, please click <strong>"Get Directions"</strong> on the bottom of the map.
-                </p>
-            </div>
-        </div>
-    </div>
-    
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-<!--Google map-->
-    <div class="container-fluid" id="container-map">
-        <div id="map"></div>
-    </div>
-
-
-<!--Google map legend-->
-    <div class="container-fluid legend">
-        <ul class="list-group list-group-horizontal">
-            <li class="list-group-item flex-fill">
-                <div class="icon-legend">
-                    <img src="/assets/images/shell.png" class="img-fluid" alt="Responsive image" id="logo">
-                    Shell Station
-                </div>
-            </li>
-            <li class="list-group-item flex-fill">
-                <div class="icon-legend">
-                    <img src="/assets/images/avia.png" class="img-fluid" alt="Responsive image" id="logo">
-                    Avia Station
-                </div>
-            </li>
-            <li class="list-group-item flex-fill">
-                <div class="icon-legend">
-                    <img src="/assets/images/AirLiquide.png" class="img-fluid" alt="Responsive image" id="logo">
-                    AirLiquide Station
-                </div>
-            </li>
-            <li class="list-group-item flex-fill">
-                <div class="icon-legend">
-                    <img src="/assets/images/Rolande.png" class="img-fluid" alt="Responsive image" id="logo">
-                    Rolande Station
-                </div>
-            </li>
-        </ul>
-    </div>
-
-<!--Buttons with actions-->
-    <div class="wrapper" id="wrapper-button">
-    <a href="directions.html" class="btn btn-success btn-lg">Get Directions</a>
-    </div>
-
-    <div class="container-fluid" id="contact-container">
-    <h5 class="text-center">Contact Us</h5>
-        <ul class="list-group text-center" id="contact-list">
-            <li class="list-group-item">LNG Station Locator</li>
-            <li class="list-group-item">Smidswater 1A</li>
-            <li class="list-group-item">2514 BV The Hague </li>
-            <li class="list-group-item">The Netherlands</li>
-
-        </ul>
-    <div>
-
-    <footer class="container-fluid footer">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h5 class="sm-text">Find us on Social Media</h5>
-                <ul class="list inline sm-links">
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fab fa-linkedin" aria-hidden="true" style="font-size: 2em"></i>
-                            <span class="sr-only">Linkedin</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fab fa-twitter-square" aria-hidden="true" style="font-size: 2em"></i>
-                            <span class="sr-only">Twitter</span>
-                        </a>
-                    </li>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mr-auto">
+                    <li class="active nav-item mr-2"><a class="nav-link" href="index.html">LNG Station Locator</a></li>
+                    <li class="active nav-item mr-2"><a class="nav-link" href="directions.html">Get Directions</a></li>
                 </ul>
             </div>
+        </nav>
+
+        <!--Jumbotron-->
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container fluid">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12">
+                        <p class="lead text-center">Refuelling with LNG is<strong> Safe, Fast and Easy</strong></p>
+                    </div>
+                    <!--Count up-->
+                    <div class="col-lg-4 col-md-6 text-center">
+                        <div class="d-none d-lg-block">
+                            <i class="fas fa-truck-moving icon"></i>
+                        </div>
+                        <div class="d-none d-md-block d-lg-block">
+                            <div class="counter" data-target="20">0</div>
+                            <h3>Shell LNG Stations</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 text-center">
+                        <div class="d-none d-lg-block">
+                            <i class="fas fa-truck-moving icon"></i>
+                        </div>
+                        <div class="d-none d-md-block d-lg-block">
+                            <div class="counter" data-target="60">0</div>
+                            <h3>Third Party Network</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </footer>
 
-    <!--Bootstrap JS & jQuery reference-->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> 
+        <div class="container fluid" id="overview">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12" id="overview-heading">
+                    <div class="wrapper" id="network-wrapper">
+                        <h4 class="overview-heading text-center">Network Overview</h4>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-12" id="overview-paragraph">
+                    <p class="overview-paragraph">
+                        This map gives an overview of all the refueling locations available in Europe. If you are a holder of the Shell LNG card, you can refuel in all the locations with an additional discount. For more information on the
+                        stations' location, please click <strong>"Get Directions"</strong> on the bottom of the map.
+                    </p>
+                </div>
+            </div>
+        </div>
 
-    <!--Google map reference links-->
+        <!--Google map-->
+        <div class="container-fluid" id="container-map">
+            <div id="map"></div>
+        </div>
 
-    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-   <!--- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAdj_QosoKhQBg4-6Ym_AvOVfy9IXT-cU&libraries=places"></script>-->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAdj_QosoKhQBg4-6Ym_AvOVfy9IXT-cU&callback=initMap"></script>
+        <!--Google map legend-->
+        <div class="container-fluid legend">
+            <ul class="list-group list-group-horizontal">
+                <li class="list-group-item flex-fill">
+                    <div class="icon-legend text-center">
+                        <img src="/assets/images/shell.png" class="logo img-fluid" alt="Responsive image" />
+                    </div>
+                    <div class="text-center">Shell Station</div>
+                </li>
+                <li class="list-group-item flex-fill">
+                    <div class="icon-legend text-center">
+                        <img src="/assets/images/avia.png" class="logo img-fluid" alt="Responsive image" />
+                    </div>
+                    <div class="text-center">Avia Station</div>
+                </li>
+                <li class="list-group-item flex-fill">
+                    <div class="icon-legend text-center">
+                        <img src="/assets/images/AirLiquide.png" class="logo img-fluid" alt="Responsive image" />
+                    </div>
+                    <div class="text-center">AirLiquide Station</div>
+                </li>
+                <li class="list-group-item flex-fill">
+                    <div class="icon-legend text-center">
+                        <img src="/assets/images/Rolande.png" class="logo img-fluid" alt="Responsive image" />
+                    </div>
+                    <div class="text-center">Rolande Station</div>
+                </li>
+            </ul>
+        </div>
 
-    <!--Reference to Javascript files-->
-    <script src="assets/js/map.js"></script>
-    <script src="assets/js/javascript.js"></script>
+        <!--Buttons with actions-->
+        <div class="wrapper" id="wrapper-button">
+            <a href="directions.html" class="btn btn-success btn-lg">Get Directions</a>
+        </div>
 
-</body>
+        <div class="container-fluid" id="contact-container">
+            <h5 class="text-center">Contact Us</h5>
+            <ul class="list-group text-center" id="contact-list">
+                <li class="list-group-item">LNG Station Locator</li>
+                <li class="list-group-item">Smidswater 1A</li>
+                <li class="list-group-item">2514 BV The Hague</li>
+                <li class="list-group-item">The Netherlands</li>
+            </ul>
+        </div>
+
+        <footer class="container-fluid footer">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h5 class="sm-text">Find us on Social Media</h5>
+                    <ul class="list inline sm-links">
+                        <li class="list-inline-item">
+                            <a target="_blank" href="#">
+                                <i class="fab fa-linkedin" aria-hidden="true" style="font-size: 2em;"></i>
+                                <span class="sr-only">Linkedin</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="#">
+                                <i class="fab fa-twitter-square" aria-hidden="true" style="font-size: 2em;"></i>
+                                <span class="sr-only">Twitter</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <!--Bootstrap JS & jQuery reference-->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+        <!--Google map reference links-->
+
+        <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+        <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAdj_QosoKhQBg4-6Ym_AvOVfy9IXT-cU&libraries=places"></script>-->
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAdj_QosoKhQBg4-6Ym_AvOVfy9IXT-cU&callback=initMap"></script>
+
+        <!--Reference to Javascript files-->
+        <script src="assets/js/map.js"></script>
+        <script src="assets/js/javascript.js"></script>
+    </body>
 </html>

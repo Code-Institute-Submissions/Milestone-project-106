@@ -105,6 +105,16 @@ body {
     width: 100%;  
   }
 
+#dvMap {
+    height: 500px;  
+    width: 100%;  
+}
+
+#dvPanel{
+    height: 500px;  
+    width: 100%;  
+}
+
 #container-map {
     max-width: 1130px;
     padding:0;
@@ -141,7 +151,7 @@ body {
     margin: 0 auto;
 }
 
-#logo{
+.logo{
     width: 25px;
     height: 25px;
 }

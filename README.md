@@ -22,6 +22,8 @@ The owners can benefit from the volumes sold at the stations promoted by this we
 The users can benefit form the discounts given by the Shell LNG card and can plan their journey better.
 
 ##UX
+
+###User stories
 As a site owner:
 
 a.	I need to provide the latest information about the LNG stations location,
@@ -52,9 +54,13 @@ a.	I want to know who provides LNG in Europe,
 b.	I want to know how many stations are there right now,
 c.	I want to know which countries have LNG stations.
 
-##User stories
+###Design
+1. Color Scheme: https://www.schemecolor.com/shades-of-green.php
+2. Typography: The Montserrat font is the main font used throughout the whole website 
+3. Images were used only for the logos on the map. the images are available to the public
 
-##Wireframes
+
+###Wireframes
 Wireframes for laptop/desktop, tablet, and mobile are available here https://balsamiq.cloud/s7wry95/pc6qc9u
 Wireframes show all the actions that are used in design of the website: 
 a. Navbar value;
@@ -70,7 +76,7 @@ The countdown shows the number of the stations only if I load/reload the page.
 * Button "Shell and TPN overview" refreshes the static view of the map on the click. 
 As a user I can click on this button to refresh the overview of the stations.
 * Button "Get directions" takes users to a separate page where the form can be filled. 
-As a user I can click on this button to plan my route.
+As a user I can click on this button Get Directions.
 * Embedded Google map shows the static view of all stations.
 As a user I can see all the stations on the map.
 * As a user I can drag the map.
@@ -78,10 +84,6 @@ As a user I can see all the stations on the map.
 * Icons appear on the map with animation - bounce.
 * As a user I can click on each icon to open an info window.
 * The map has a legend. As a user I can differentiate between different providers.
-* The map has a legal disclaimer. As a user I know that the providers of the information are not responsible for any miscalculation. 
-* The contact form is placed in the end of the page. As a user I can contact site owners if I notice missing or inconsistent information.
-
-
 
 ##Features left to implement
 1. Show all the stations that are available along the route. When user gets directions, he/she can see where are the stations.
@@ -95,6 +97,11 @@ The project uses Bootstrap to simplify the process of building a grid layout, im
 Bootstrap was also used for responsive design.
 - JQuery – https://jquery.com/
 JQuery was used for responsive design of the buttons.
+- Google Maps API Features:
+a. Google Map Directions API
+b. Google Map Distance Matrix API
+c. Maps Javascript API
+d. Places API
 
 ###Languages used:
 
@@ -109,8 +116,12 @@ JQuery was used for responsive design of the buttons.
 - W3C Markup Validator - https://validator.w3.org/#validate_by_input
 - W3C CSS Validator - https://jigsaw.w3.org/css-validator/#validate_by_input
 
+###Testing User Stories from the UX Section
 
-##Responsive design
+
+###Responsive design
+The project was designed for all screen sizes, namely: laptop/desktop, tablet, mobile. 
+All features are available on the large screen devices. Mobile devices dont have count up and have simplifies jumbotron
 
 ##Deployment
 
@@ -136,9 +147,7 @@ JQuery was used for responsive design of the buttons.
 
 
 ##Credits
-Media
-There are two images used in the project:
-
+I took NGVA website as an idea for this project: https://www.ngva.eu/stations-map/
 
 ##Content
-All content is taken from publically available sources, no intellectual right were violated.
+All content is taken from publically available sources, no intellectual rights were violated. All text was written by developer.

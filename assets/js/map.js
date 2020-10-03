@@ -145,7 +145,7 @@ function initMap() {
 			lng: 6.21041
 		},
 		iconImage: "/assets/images/airliquide logo.png",
-		content: '<h5>AirLiquide Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
+		content: '<h5>Nancy AirLiquide Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
 	});
 	addMarker({
 		coords: {
@@ -153,7 +153,7 @@ function initMap() {
 			lng: 7.57352
 		},
 		iconImage: "/assets/images/airliquide logo.png",
-		content: '<h5>AirLiquide Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
+		content: '<h5>Strasbourg AirLiquide Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
 	});
 	addMarker({
 		coords: {
@@ -161,7 +161,7 @@ function initMap() {
 			lng: 5.135654
 		},
 		iconImage: "/assets/images/airliquide logo.png",
-		content: '<h5>AirLiquide Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
+		content: '<h5>Dijon AirLiquide Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
 	});
 	addMarker({
 		coords: {
@@ -169,7 +169,7 @@ function initMap() {
 			lng: 4.30658
 		},
 		iconImage: "/assets/images/airliquide logo.png",
-		content: '<h5>AirLiquide Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
+		content: '<h5>Saint-Étienne AirLiquide Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
 	});
 	//Avia
 	addMarker({
@@ -178,23 +178,16 @@ function initMap() {
 			lng: -0.81275
 		},
 		iconImage: "/assets/images/avia logo.png",
-		content: '<h5>Avia Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
+		content: '<h5>Fontenay-le-Comte Avia Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
 	});
-	addMarker({
-		coords: {
-			lat: 46.44395,
-			lng: -0.81275
-		},
-		iconImage: "/assets/images/avia logo.png",
-		content: '<h5>Avia Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
-	});
+
 	addMarker({
 		coords: {
 			lat: 45.90796,
 			lng: 1.29264
 		},
 		iconImage: "/assets/images/avia logo.png",
-		content: '<h5>Avia Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
+		content: '<h5>Limoges Avia Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
 	});
 	addMarker({
 		coords: {
@@ -202,7 +195,7 @@ function initMap() {
 			lng: -0.91637
 		},
 		iconImage: "/assets/images/avia logo.png",
-		content: '<h5>Avia Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
+		content: '<h5>Cholet Avia Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
 	});
 	addMarker({
 		coords: {
@@ -210,7 +203,7 @@ function initMap() {
 			lng: 4.74444
 		},
 		iconImage: "/assets/images/avia logo.png",
-		content: '<h5>Avia Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
+		content: '<h5>Montélimar Avia Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
 	});
 	//Rolande
 	addMarker({
@@ -219,7 +212,7 @@ function initMap() {
 			lng: 6.0041
 		},
 		iconImage: "/assets/images/Rolande logo.png",
-		content: '<h5>Rolande Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
+		content: '<h5>Arnhem Rolande Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
 	});
 	addMarker({
 		coords: {
@@ -227,7 +220,7 @@ function initMap() {
 			lng: 5.03039
 		},
 		iconImage: "/assets/images/Rolande logo.png",
-		content: '<h5>Rolande Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
+		content: '<h5>Utrecht Rolande Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
 	});
 	addMarker({
 		coords: {
@@ -235,7 +228,7 @@ function initMap() {
 			lng: 5.93713
 		},
 		iconImage: "/assets/images/Rolande logo.png",
-		content: '<h5>Rolande Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
+		content: '<h5>Heerenveen Rolande Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
 	});
 	addMarker({
 		coords: {
@@ -243,7 +236,7 @@ function initMap() {
 			lng: 4.75185
 		},
 		iconImage: "/assets/images/Rolande logo.png",
-		content: '<h5>Rolande Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
+		content: '<h5>Alkmaar Rolande Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
 	});
 	addMarker({
 		coords: {
@@ -251,7 +244,7 @@ function initMap() {
 			lng: 4.20073
 		},
 		iconImage: "/assets/images/Rolande logo.png",
-		content: '<h5>Rolande Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
+		content: '<h5>Oude-Tonge Rolande Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
 	});
 	// add animation and event listener  
 	function addMarker(props) {

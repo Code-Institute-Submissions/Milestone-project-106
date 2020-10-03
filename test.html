@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Waypoints in Directions</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCu1B9Av4iCgz7gPMjmM8-UnSikNlX5f1M&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <style type="text/css">
+      #right-panel {
+        font-family: "Roboto", "sans-serif";
+        line-height: 30px;
+        padding-left: 10px;
+      }
+
+      #right-panel select,
+      #right-panel input {
+        font-size: 15px;
+      }
+
+      #right-panel select {
+        width: 100%;
+      }
+
+      #right-panel i {
+        font-size: 12px;
+      }
+
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      #map {
+        height: 100%;
+        float: left;
+        width: 70%;
+        height: 100%;
+      }
+
+      #right-panel {
+        margin: 20px;
+        border-width: 2px;
+        width: 20%;
+        height: 400px;
+        float: left;
+        text-align: left;
+        padding-top: 0;
+      }
+
+      #directions-panel {
+        margin-top: 10px;
+        background-color: #ffee77;
+        padding: 10px;
+        overflow: scroll;
+        height: 174px;
+      }
+    </style>
+    <script>
+      function initMap() {
+        var directionsService = new google.maps.DirectionsService();
+        var directionsRenderer = new google.maps.DirectionsRenderer();
+        var map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 6,
+          center: { lat: 49.81888,
+			lng: 3.30115 },
+        });
+        
+        var marker = new google.maps.Marker({
+      
+        position: {lat: 50.694284, lng: 5.626468},
+		iconImage: "/assets/images/shell logo.png",
+		content: '<h5>Antwerp Shell Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
+        });
+
+        marker.setMap(map);
+
+        directionsRenderer.setMap(map);
+        document.getElementById("submit").addEventListener("click", () => {
+          calculateAndDisplayRoute(directionsService, directionsRenderer);
+        });
+
+      }
+
+    
+      function calculateAndDisplayRoute(directionsService, directionsRenderer) {
+        const waypts = [];
+        const checkboxArray = document.getElementById("waypoints");
+
+        for (let i = 0; i < checkboxArray.length; i++) {
+          if (checkboxArray.options[i].selected) {
+            waypts.push({
+              location: checkboxArray[i].value,
+              stopover: true,
+            });
+          }
+        }
+        directionsService.route(
+          {
+            origin: document.getElementById("txtSource").value,
+            destination: document.getElementById("txtDestination").value,
+            waypoints: waypts,
+            optimizeWaypoints: true,
+            travelMode: google.maps.TravelMode.DRIVING,
+          },
+          (response, status) => {
+            if (status === "OK") {
+              directionsRenderer.setDirections(response);
+              const route = response.routes[0];
+            }
+          }
+        );
+
+           var service = new google.maps.DistanceMatrixService();
+    service.getDistanceMatrix({
+        origins: [source],
+        destinations: [destination],
+        travelMode: google.maps.TravelMode.DRIVING,
+        unitSystem: google.maps.UnitSystem.METRIC,
+        avoidHighways: false,
+        avoidTolls: false
+    }, 
+    function (response, status) {
+        if (status == google.maps.DistanceMatrixStatus.OK && response.rows[0].elements[0].status != "ZERO_RESULTS") {
+            var distance = response.rows[0].elements[0].distance.text;
+            var duration = response.rows[0].elements[0].duration.text;
+            var dvDistance = document.getElementById("dvDistance");
+            dvDistance.innerHTML = "";
+            dvDistance.innerHTML += "Distance: " + distance + "<br />";
+            dvDistance.innerHTML += "Duration: " + duration;
+ 
+        } else {
+            alert("Unable to find the route.");
+        }
+    });
+      }
+
+
+    </script>
+  </head>
+  <body>
+    <div id="map"></div>
+    <div id="right-panel">
+      <div>
+                <div class="form-group row">
+                    <label for="txtSource" class="col-sm-2 col-form-label">From:</label>
+                    <div class="col-lg-4 col-md-6 col-sm-10">
+                        <input type="text" class="form-control" id="txtSource" placeholder="I am travelling from" onfocus="this.value=''" value="Smidswater, The Hague, Netherlands" />
+                    </div>
+                </div>
+        <b>Waypoints:</b> <br />
+        <i>(Ctrl+Click or Cmd+Click for multiple selection)</i> <br />
+        <select multiple id="waypoints">
+      <option value="Blitzkuhlenstraße 97, 45659 Recklinghausen, Germany" selected>Shell</option>
+                            <option value="Romeynsweel 1, 2030 Antwerpen, Belgium">Shell</option>
+        </select>
+                <div class="form-group row">
+                    <label for="txtDestination" class="col-sm-2 col-form-label">To:</label>
+                    <div class="col-lg-4 col-md-6 col-sm-10">
+                        <input type="text" class="form-control" id="txtDestination" placeholder="I am travelling to" onfocus="this.value=''" value="Herengraht, Amsterdam, Netherlands" />
+                    </div>
+        <input type="submit" id="submit" />
+      </div>
+        <div class="container-fluid">
+            <div id="dvDistance"></div>
+        </div>
+    </div>
+
+    </body>
+</html>

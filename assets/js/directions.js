@@ -92,7 +92,7 @@ function GetRoute() {
             ["Pijnacker",53.518898,10.022123],
             ["Hamburg",53.518898,10.022123],
             ["Lehre",52.31239,10.63523],
-            ["Recklinghausen",51.593659,7.220584],
+            ["Recklinghausen",51.26704, 4.39579],
             ['Hermsdorf', 50.88997,11.8676451],
             ["Kircheim",48.64408,9.42896],
         ];

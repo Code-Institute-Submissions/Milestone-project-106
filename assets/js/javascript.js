@@ -1,4 +1,4 @@
-
+//*********COUNT UP**********************//
 var counters = document.querySelectorAll('.counter');
 var speed = 10;
 
@@ -21,5 +21,10 @@ counters.forEach(counter => {
     updateCount();
 });
 
-
-  
+//*********GET DIRECTIONS BUTTON EFFECT**********************//
+$("button").mouseenter(function(){
+  $("button").removeClass("btn btn-success").addClass("btn btn-secondary");
+});
+$("button").mouseleave(function(){
+  $("button").removeClass("btn btn-secondary").addClass("btn btn-success");
+});

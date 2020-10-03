@@ -50,7 +50,7 @@ function GetRoute() {
             var dvDistance = document.getElementById("dvDistance");
             dvDistance.innerHTML = "";
             dvDistance.innerHTML += "Distance: " + distance + "<br />";
-            dvDistance.innerHTML += "Duration:" + duration;
+            dvDistance.innerHTML += "Duration: " + duration;
  
         } else {
             alert("Unable to find the route.");

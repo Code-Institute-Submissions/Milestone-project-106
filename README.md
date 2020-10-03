@@ -24,6 +24,14 @@ The users can benefit form the discounts given by the Shell LNG card and can pla
 ##UX
 
 ###User stories
+
+User stories by roles
+This website will be used by people who are likely to have following roles:
+A site owner – Shell fleet solution management team
+A potential site visitor 1 – truck driver who has an international route (within Europe).
+A potential site visitor 2 – fleet manager of a logistics company that needs more information about LNG network in Europe.
+A potential site visitor 3 – anyone who wants to learn more about LNG network in Europe.
+
 As a site owner:
 
 a.	I need to provide the latest information about the LNG stations location,

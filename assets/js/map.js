@@ -8,8 +8,9 @@ function initMap() {
 			lng: 3.30115
 		}
 	});
-	// add location, add marker, set info message    
-	// Shell
+    // add location, add marker, set info message    
+    
+    //*********SHELL**********************//
 	addMarker({
 		coords: {
 			lat: 50.694284,
@@ -138,7 +139,7 @@ function initMap() {
 		iconImage: "assets/images/shell_logo.png",
 		content: '<h5>Kircheim Shell Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
 	});
-	// AirLiquide
+   //*********AIRLIQUIDE**********************//
 	addMarker({
 		coords: {
 			lat: 48.61569,
@@ -171,7 +172,7 @@ function initMap() {
 		iconImage: "assets/images/airliquide_logo.png",
 		content: '<h5>Saint-Étienne AirLiquide Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
 	});
-	//Avia
+ //*********AVIA**********************//
 	addMarker({
 		coords: {
 			lat: 46.44395,
@@ -205,7 +206,7 @@ function initMap() {
 		iconImage: "assets/images/avia_logo.png",
 		content: '<h5>Montélimar Avia Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
 	});
-	//Rolande
+   //*********ROLANDE**********************//
 	addMarker({
 		coords: {
 			lat: 51.9748,
@@ -245,7 +246,8 @@ function initMap() {
 		},
 		iconImage: "assets/images/Rolande_logo.png",
 		content: '<h5>Oude-Tonge Rolande Station</h5><br><h6>Pay here with your EuroShell Card</h6>',
-	});
+    });
+    
 	// add animation and event listener  
 	function addMarker(props) {
 		var marker = new google.maps.Marker({

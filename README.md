@@ -125,7 +125,7 @@ d. Places API
 - W3C CSS Validator - https://jigsaw.w3.org/css-validator/#validate_by_input
 
 ###Testing User Stories from the UX Section
-
+Please see the document here https://drive.google.com/file/d/199YWcMkGQQtsACmxa3bp6yIz1OksQ5fQ/view?usp=sharing
 
 ###Responsive design
 The project was designed for all screen sizes, namely: laptop/desktop, tablet, mobile. 

@@ -31,14 +31,14 @@ A potential site visitor 1 – truck driver who has an international route (with
 A potential site visitor 2 – fleet manager of a logistics company that needs more information about LNG network in Europe.
 A potential site visitor 3 – anyone who wants to learn more about LNG network in Europe.
 
-1. As a site owner:
+- As a site owner:
 
 1.	I need to provide the latest information about the LNG stations location,
 2.	I need to have correct address and location of the stations on map,
 3.	I need to indicate which stations accept Shell LNG card,
 4.	I need to show to the user, which stations are Shell branded and which are branded by other LNG providers.
 
-2. As a site visitor 1:
+-  As a site visitor 1:
 
 1.	I want to see an overview of all available LNG stations in Europe. 
 2.	I want to see how many LNG stations are there in Europe and where they are located.
@@ -48,14 +48,14 @@ A potential site visitor 3 – anyone who wants to learn more about LNG network 
 6.	I want to know how long does the journey take in km.
 7.	I want to know how long does the journey take in hours.
 
-3. As a site visitor 2:
+-  As a site visitor 2:
 
 1.	I need to know how extensive the LNG network is in Europe and whether it covers my company’s operational countries.
 2.	I need to make sure that the drivers can use a customer card in different locations. 
 3.	I can check how long does a typical journey take in hours and km.
 4.	I need to know who are the other LNG providers in Europe.
 
-4. As a site visitor 3:
+-  As a site visitor 3:
 
 1.	I want to know who provides LNG in Europe,
 2.	I want to know how many stations are there right now,

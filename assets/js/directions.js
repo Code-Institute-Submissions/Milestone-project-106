@@ -127,13 +127,21 @@ function GetRoute() {
             ["Montélimar",44.57839,4.74444],
         ];
 
-        for (i = 0; i <locationsAvia.length; i++) {
-            marker = new google.maps.Marker ({
+        for (i = 0; i <locationsAvia.length; i++) 
+        {
+            marker = new google.maps.Marker 
+            ({
                 position: new google.maps.LatLng(locationsAvia[i][1], locationsAvia[i][2]),
                 map:map,
                 icon: '/assets/images/avia logo.png',
             });
         }
+
+        for (i = 0; i <locationsAvia.length; i++)
+        {
+
+        };
+  
     //*********ROLANDE**********************//
         var locationsRolande =[
             ["Arnhem",51.9748,6.0041],
@@ -150,7 +158,6 @@ function GetRoute() {
                 icon: '/assets/images/Rolande logo.png',
             });
         }
-
 }
 
 

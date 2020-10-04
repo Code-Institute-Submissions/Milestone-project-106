@@ -1,8 +1,8 @@
 #Live website https://elena-pakhmurskaia.github.io/Milestone-project-2/
 
-#Milestone Project 2 - Refueling with LNG
+# **Milestone Project 2 - Refueling with LNG**
 
-##Aim of the project
+## **Aim of the project**
 Truck Refueling website was designed to give a comprehensive overview of Shell and third party LNG providers in Europe. Third party LNG providers are - Rolande, Avia, Airliquide. 
 The main goals of the website are:
 1.	give the latest overview of all Shell and third party LNG refueling stations,
@@ -10,7 +10,7 @@ The main goals of the website are:
 3.	enable drivers to plan their journey,
 4.	indicate where the customer card is accepted. 
 
-###Background
+### **Background**
 There are not many LNG refueling stations, which makes it important to plan a journey well, so that the truck can be refueled on the way from A to B. 
 Also, LNG stations are not represented correctly on Google map, which makes it difficult for drivers to find a station. 
 Next, not all LNG stations in Europe accept Shell LNG card.
@@ -21,11 +21,10 @@ It is important for site owners and site users to have the most updated view on 
 The owners can benefit from the volumes sold at the stations promoted by this website. 
 The users can benefit form the discounts given by the Shell LNG card and can plan their journey better.
 
-##UX
+## **UX**
 
-###User stories
+### **User stories by roles**
 
-User stories by roles
 This website will be used by people who are likely to have following roles:
 A site owner – Shell fleet solution management team
 A potential site visitor 1 – truck driver who has an international route (within Europe).
@@ -62,23 +61,23 @@ a.	I want to know who provides LNG in Europe,
 b.	I want to know how many stations are there right now,
 c.	I want to know which countries have LNG stations.
 
-###Design
+### **Design**
 1. Color Scheme: https://www.schemecolor.com/shades-of-green.php
 2. Typography: The Montserrat font is the main font used throughout the whole website 
 3. Images were used only for the logos on the map. the images are available to the public
 
 
-###Wireframes
+### **Wireframes**
 Wireframes for laptop/desktop, tablet, and mobile are available here https://balsamiq.cloud/s7wry95/pc6qc9u
 Wireframes show all the actions that are used in design of the website: 
 a. Navbar value;
 b. Get Route button and change in the view of the page with the click.
 
-##Features
+## **Features**
 
 This website is very simple in structure. It has a Home page and a Directions page.
 
-###Home page Features:
+### **Home page Features:**
 * In jumbotron, as a users  I can see right away how many LNG and Shell stations are there. 
 The countdown shows the number of the stations only if I load/reload the page. 
 * Button "Shell and TPN overview" refreshes the static view of the map on the click. 
@@ -93,12 +92,12 @@ As a user I can see all the stations on the map.
 * As a user I can click on each icon to open an info window.
 * The map has a legend. As a user I can differentiate between different providers.
 
-##Features left to implement
+## **Features left to implement**
 1. Show all the stations that are available along the route. When user gets directions, he/she can see where are the stations.
 2. Calculate detouring. As a user I can see if I need to detour to refuel, and how long is detour in km.
 3. Show "get directons" on the same page to make a one page website that is easier to navigate.
 
-##Technologies used
+## **Technologies used**
 
 - Bootstrap – https://getbootstrap.com/
 The project uses Bootstrap to simplify the process of building a grid layout, implementing forms, and creating buttons. 
@@ -111,29 +110,29 @@ b. Google Map Distance Matrix API
 c. Maps Javascript API
 d. Places API
 
-###Languages used:
+### **Languages used:**
 
 - HTML
 - CSS
 - Javascript
 
-##Testing
+## **Testing**
 
 * The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
 - W3C Markup Validator - https://validator.w3.org/#validate_by_input
 - W3C CSS Validator - https://jigsaw.w3.org/css-validator/#validate_by_input
 
-###Testing User Stories from the UX Section
+### **Testing User Stories from the UX Section**
 Please see the document here https://drive.google.com/file/d/199YWcMkGQQtsACmxa3bp6yIz1OksQ5fQ/view?usp=sharing
 
 ###Responsive design
 The project was designed for all screen sizes, namely: laptop/desktop, tablet, mobile. 
 All features are available on the large screen devices. Mobile devices dont have count up and have simplifies jumbotron
 
-##Deployment
+## **Deployment**
 
-###Deployment – Live Website
+### **Deployment – Live Website**
 
 *Create repository in GitHub and give it a relevant name.
 *Click on your repository to open it.
@@ -142,7 +141,7 @@ All features are available on the large screen devices. Mobile devices dont have
 *Under the “source” drop down menu, choose a branch. I chose “master branch” and select it.
 *You will then see a URL to your live webpage. In my case the URL is https://elena-pakhmurskaia.github.io/Milestone-project-2/
 
-###Deployment – Run Locally
+### **Deployment – Run Locally**
 
 *Click on the repository called Elena-Pakhmurskaia/Milestone_2.
 *Along the top bar, find the “clone or download” button.
@@ -154,8 +153,8 @@ All features are available on the large screen devices. Mobile devices dont have
 *Press the enter button and your clone will be created.
 
 
-##Credits
+## **Credits**
 I took NGVA website as an idea for this project: https://www.ngva.eu/stations-map/
 
-##Content
+## **Content**
 All content is taken from publically available sources, no intellectual rights were violated. All text was written by developer.

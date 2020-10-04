@@ -137,10 +137,17 @@ function GetRoute() {
             });
         }
 
-        for (i = 0; i <locationsAvia.length; i++)
-        {
-
-        };
+        var infoWindow = new google.maps.InfoWindow({
+            content: locationsAvia[i][0],
+        });
+       // for (i = 0; i <locationsAvia.length; i++)
+       // {
+       //     infowindow = new google.maps.infoWindow
+      //      ({
+       //         content: new google.maps.LatLng(locationsAvia[i][0]),
+      //          map:map,
+      //     });
+     //   };
   
     //*********ROLANDE**********************//
         var locationsRolande =[

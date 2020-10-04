@@ -64,14 +64,14 @@ A potential site visitor 3 – anyone who wants to learn more about LNG network 
 ### **Design**
 1. Color Scheme: https://www.schemecolor.com/shades-of-green.php
 2. Typography: The Montserrat font is the main font used throughout the whole website 
-3. Images were used only for the logos on the map. the images are available to the public
+3. Images were used only for the logos on the map, they are available to the public
 
 
 ### **Wireframes**
 Wireframes for laptop/desktop, tablet, and mobile are available here https://balsamiq.cloud/s7wry95/pc6qc9u
 Wireframes show all the actions that are used in design of the website: 
-1. Navbar value;
-2. Get Route button and change in the view of the page with the click.
+1. Navbar value
+2. Get Route button and change in the view of the page with the click
 
 ## **Features**
 
